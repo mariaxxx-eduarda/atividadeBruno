@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #e99af0;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 350px;
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+input {
+    width: 350px;
+    height: 40px;
+    padding: 8px 12px;
+
+    border: 2px solid #8e2aa8;
+    border-radius: 8px;
+    outline: none;
+
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #c057ce;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px
+}
+
+
+input:focus {
+    border-color: #6d1688;
+}
+
+button {
+    width: 350px;
+    height: 42px;
+
+    background: #8e2aa8;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #74198c;
+}
+
+p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #6d1688;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    label,
+    input,
+    button {
+        width: 85%;
+    }
+}
+
+
+    </style>
+    <h1>Login - GET - READ </h1>
+    <label >Nome</label>
+    <input type="text" id="nome">
+    <label>Senha</label>
+    <input type="password" id="senha">
+    <br><br>
+    <button onclick="fazerLogin()">Entrar</button>
+
+    <p>Ainda não tem acesso? <a href="index.html">Clique aqui</a></p>
+
+    <script src="login.js"></script>
+</body>
+</html>
